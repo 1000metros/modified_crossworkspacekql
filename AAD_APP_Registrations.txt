@@ -1,0 +1,89 @@
+APIs clientes.
+
+	BIZAGI (SUSCRIPCIONES PROPIAS DE CLIENTE)
+		
+		● Tenant ID: 7ea17f8a-dbcb-48fd-90ad-d1a0493f49d8
+		● Client ID: b59339a1-133f-4ce8-92ce-5624c5a02970
+		● Client Secret: f368Q~p8Qs5mvGItYrIsqKN5xvShmD66tXfMtcp_
+
+		WORKSPACES
+			WORKSPACE_NAME="IT-log-analytics"
+			WORKSPACE_NAME="Sentinel-Customers-EastUS"
+			WORKSPACE_NAME="Sentinel-Customers-CentralUS"
+			WORKSPACE_NAME="Sentinel-Customers-EastUS2"
+			WORKSPACE_NAME="Sentinel-Customers-NorthEurope"
+			WORKSPACE_NAME="Sentinel-Customers-SouthCentralUS"
+			WORKSPACE_NAME="Sentinel-Customers-SouthEastAsia"
+			WORKSPACE_NAME="Sentinel-Customers-WestEurope"
+			WORKSPACE_NAME="Sentinel-Customers-WestUS"
+
+			RG_GROUPS="RG_InfraOps" --> IT-log-analytics --> Suscription: "Enterprise Dev/Test"
+			RG_GROUPS="RG_Sentinel_East_US" --> Sentinel-Customers-EastUS --> Suscription: "Security Operations Sentinel"
+			RG_GROUPS="rg_sentinel_central_us" --> Sentinel-Customers-CentralUS --> Suscription: "Security Operations Sentinel"
+			RG_GROUPS="rg_sentinel_east_us2" --> Sentinel-Customers-EastUS2 --> Suscription: "Security Operations Sentinel"
+			RG_GROUPS="rg_sentinel_northeurope" --> Sentinel-Customers-NorthEurope --> Suscription: "Security Operations Sentinel"
+			RG_GROUPS="rg_sentinel_southcentral_us" --> Sentinel-Customers-SouthCentralUS --> Suscription: "Security Operations Sentinel"
+			RG_GROUPS="rg_sentinel_southeastasia" --> Sentinel-Customers-SouthEastAsia --> Suscription: "Security Operations Sentinel"
+			RG_GROUPS="rg_sentinel_westeurope" --> Sentinel-Customers-WestEurope --> Suscription: "Security Operations Sentinel"
+			RG_GROUPS="rg_sentinel_west_us" -->  Sentinel-Customers-WestUS --> Suscription: "Security Operations Sentinel"
+
+			SUSCRIPTIONID = "b97ed52e-0e1c-4c2c-af57-a89a63a08d2c" --> Enterprise Dev/Test
+			SUSCRIPTIONID = "f3c2bcc9-27d7-4cc9-a311-477ee729819b" --> Security Operations Sentinel
+
+	SINGULAR BANK (Suscripcion CSP Secuora)
+		•	CLIENT_ID = “9f7cd474-a50c-4aaa-9dad-737541c119e9”
+		•	CLIENT_SECRET = “i688Q~72dzSwYMW_eUqHerPblvTlRKskSELzXapI”
+		•	SUSCRIPTION_ID = “66805e42-8710-4c31-93fe-6275860cc5a2”
+		•	SUBSCRIPTION_NAME = AzureSimple Singular Bank
+		•	SUBSCRIPTION_ID = 66805e42-8710-4c31-93fe-6275860cc5a2
+		•	WORKSPACE_ID = “19b4c3a9-94b6-40d9-a4d9-3469e606d1dc”
+		•	TENANT_ID = "c558ae58-ef0c-4094-ac9c-4347662b958a"
+		•	WORKSPACE_NAME = ”WS-SIEM”
+		•	RESOURCEGROUP_NAME = ”Blue_Team”
+		
+	SINGULAR BANK (Suscripcion propia Innotec dedicada a SBA)
+	
+		•	CLIENT_ID = "48bda4d0-0c46-49ac-aecf-5c5973194909"
+		•	CLIENT_SECRET = "sTNT.2O.lu~B5.z.2I99by6Vt7Wt6lSgSg"
+		•	SUBSCRIPTION_NAME = "SOC-SingularBank"
+		•	SUBSCRIPTION_ID = "2a8fb9e8-03d2-4724-9b2d-580fa1b63a6c"
+		•	WORKSPACE_ID = "d810da71-7e08-4156-9669-a3b30a3ce826"
+		•	WORKSPACE_NAME = "SingularBankWS"
+		•	RESOURCEGROUP_NAME = "SingularBank_Security_Logs"
+		•	TENANT_ID = "777934af-0019-41c7-bb2c-f0f594b2d696"
+		
+		
+	MANGO (Suscripcion CSP INNOTEC)
+
+		•	CLIENT_ID = "706aa7e9-79a4-4731-a5ed-1208d773b7b4"
+		•	CLIENT_SECRET = "9SK8Q~IblZX218ub-neadUNWenPs~jaC2sU5lah~"
+		•	TENANT_ID = "599df23c-c4a7-4575-ba97-d3d7d28b2b1d"
+		•	SUBSCRIPTION_ID = "e64b17fd-4711-4e03-aa2e-416230840ebf"
+		•	SUBSCRIPTION_NAME = "Azure Subscription 1728092 Innotec"
+		•	WORKSPACE_NAME = "InnotecSOC-WS"
+		•	WORKSPACE_ID = "4d082081-7c2a-4f57-b848-bd64e5c72859"
+		•	RG_NAME="Innotec_resourcegroup_logs"
+
+
+	MULTI INNOTEC (Suscripcion propia Innotec)
+
+		•	CLIENT_ID = “a6ccc2ce-50ec-4b27-a905-122369897bad”
+		•	CLIENT_SECRET = “qXD8Q~mrgvOFrJB4XNzFLpUjpuqTj1dJ9_86Dbjs”
+		•	TENANT_ID = "0821cb63-a568-4597-aaaa-9914ad6c66b5"
+		•	SUSCRIPTION_ID = “b3070f35-ba6d-485f-8c10-c02fefd9c5ea”
+		•	SUBSCRIPTION_NAME = "Azure Subscription 1739762"
+		•	WORKSPACE_ID = “9cd58096-dea8-4a88-8f58-6c34c94d1bb2”
+		•	WORKSPACE_NAME = ”SmartSOCUseCase”
+		•	RESOURCEGROUP_NAME = ”SmartSOC-EntelgyInnotecSecurity”
+
+
+	FUNDAE (Suscripcion CSP INNOTEC)
+		¿? > Sin definir aun.
+		•	CLIENT_ID = “Registro app ausente”
+		•	CLIENT_SECRET = “Registro app ausente”
+		•	TENANT_ID = "77d49ec5-5261-4e44-8cf1-1acd806c4b88"
+		•	SUSCRIPTION_ID = “b427a768-7a03-47ab-9b8d-21f8a6716502”
+		•	SUBSCRIPTION_NAME = "it.s07.SOC-Security"
+		•	WORKSPACE_ID = “cc0aa73b-c77b-4b80-88b3-aefdf7a2d0be”
+		•	WORKSPACE_NAME = ”it-s07-loganalytics-SOC”
+		•	RESOURCEGROUP_NAME = ”it.s07.rg.soc”
