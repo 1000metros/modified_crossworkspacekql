@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workspace": {
+            "metadata": {
+                "description": "Log Analytics Workspace Name"
+            },
+            "type": "String"
+        }
+    },
+    "resources": [
+        {
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers/', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/b0a340e4-0038-462f-ab37-1c40f8c0fd6f')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/b0a340e4-0038-462f-ab37-1c40f8c0fd6f')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+            "kind": "Scheduled",
+            "properties": {
+                "incidentConfiguration": {
+                    "createIncident": true,
+                    "groupingConfiguration": {
+                        "enabled": false,
+                        "reopenClosedIncident": false,
+                        "lookbackDuration": "PT5H",
+                        "matchingMethod": "AllEntities",
+                    "groupByEntities": [],
+                "groupByAlertDetails": [],
+            "groupByCustomDetails": []
+        }
+    },
+    "queryFrequency": "PT1H",
+    "queryPeriod": "P1D",
+    "triggerOperator": "GreaterThan",
+    "triggerThreshold": 0,
+    "eventGroupingSettings": {
+        "aggregationKind": "SingleAlert"
+    },
+    "severity": "High",
+    "query": "InnotecMultiSecurityEvent\n| where EventID == \"4625\"",
+    "suppressionDuration": "PT5H",
+    "suppressionEnabled": false,
+"tactics": [],
+"displayName": "VOL-SEN-001 - Daily Cap critical consumption",
+"enabled": true,
+"description": "Log Analytics Workspace Daily Cap critical consumption exceeded ",
+"alertRuleTemplateName": null
+},
+"apiVersion": "2021-09-01-preview"
+}
+]
+}
